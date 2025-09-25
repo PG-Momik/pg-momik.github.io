@@ -1168,6 +1168,13 @@ const targetElements = [
         }
     },
     {
+        element: ".terminal-window",
+        animation: {
+            delay: 1000,
+            origin: window.innerWidth > 768 ? "left" : "bottom"
+        },
+    },
+    {
         element: ".about-wrapper__image",
         animation: {
             delay: 600,
