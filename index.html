@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,406 +7,467 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="/favicon.2a2e97fc.png">
 
-  <title>Momik Shrestha</title>
-  <meta property="og:title" content="Momik Shrestha | Fullstack Developer">
-  <meta name="description" content="Fullstack web developer from Nepal with Laravel, Vue, Node.js expertise.">
-  <meta property="og:image" content="/assets/profile.jpg">
-  <meta property="og:url" content="https://momikshrestha.com.np">
+  <title>Momik Shrestha | Software Engineer</title>
+  <meta name="description" content="Software Engineer driven by a 'build, build, build' philosophy.">
+
+  <!-- Custom Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./styles.css">
   <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script defer src="./index.js"></script>
+  <script defer src="./scripts/projectModal.js"></script>
+  <script defer src="./scripts/cursorFollower.js"></script>
+  <script defer src="./scripts/backToTop.js"></script>
 </head>
 
 <body>
-<section id="hero" class="jumbotron">
-  <div class="container d-flex">
-    <div class="row">
-      <div class="col-lg-7 col-12">
-        <h1 class="hero-title load-hidden">
-            <span class="d-block">
-              <span class="d-block">
-                Hi, I 'm
-              </span>
-              <span class="d-block text-color-main">MOMIK SHRESTHA</span>
-              <span class="hero-sub-title">
-                <span class="typewriter">
-                  <span id="subtitle-container"></span>
-                  <span class="caret"></span>
-                </span>
-              </span>
-              </span>
-        </h1>
+  <!-- Background Noise/Grid -->
+  <div class="bg-atmosphere">
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+  </div>
 
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Get to know me</a>
-        </p>
-      </div>
-      <div class="col-lg-5 col-12 pt-6 p-lg-0 hero-title load-hidden">
-        <div class="terminal-window js-tilt" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-          <div class="terminal-header mb-3">
-            <span class="terminal-dot bg-danger"></span>
-            <span class="terminal-dot bg-warning"></span>
-            <span class="terminal-dot bg-success"></span>
+  <main class="container">
+    <!-- HEADER -->
+    <header class="main-header">
+      <h1 class="name-title">MOMIK<br>SHRESTHA</h1>
+      <div class="header-meta">
+        <div class="meta-group">
+          <span class="label">Role</span>
+          <span class="value">Software Engineer</span>
+        </div>
+        <div class="meta-group">
+          <span class="label">Location</span>
+          <span class="value">Nepal</span>
+        </div>
+        <div class="meta-group">
+          <span class="label">Contact</span>
+          <a href="mailto:momik.shrestha@gmail.com" class="value link">momik.shrestha@gmail.com</a>
+        </div>
+        <div class="meta-group">
+          <span class="label">Social</span>
+          <div class="social-links">
+            <a href="https://github.com/PG-Momik" target="_blank" class="link">GitHub</a>
+            <a href="https://linkedin.com/in/momik-shrestha" target="_blank" class="link">LinkedIn</a>
           </div>
-          <div class="terminal-content">
-            <div class="terminal-line">
-              <span class="terminal-session">momik@portfolio:~$</span> <span class="terminal-command">cat
-                  BACKEND_SKILLS.txt</span>
-            </div>
-            <div class="terminal-response">
-              Laravel, Express, Typescript, PostgreSQL, MongoDB, REST, SOAP, Service-repo pattern, Factory pattern,
-              Builder pattern
-            </div>
+        </div>
+        <!-- Added Resume Group -->
+        <div class="meta-group">
+          <span class="label">Resume</span>
+          <a href="./assets/resume.pdf" target="_blank" class="value link">View PDF</a>
+        </div>
+      </div>
+    </header>
 
-            <div class="terminal-line">
-              <span class="terminal-session">momik@portfolio:~$</span> <span class="terminal-command">cat
-                  FRONTEND_SKILLS.txt</span>
-            </div>
-            <div class="terminal-response">
-              CSS, SCSS, Tailwind, Vue3, jQuery, JavaScript, Typescript, React
-            </div>
+    <!-- SUMMARY / MANIFESTO -->
+    <section class="manifesto">
+      <p class="manifesto-text">
+        Driven by a <span class="highlight">"build, build, build"</span> philosophy, constantly experimenting with new
+        tools to create efficient and practical solutions.
+      </p>
+    </section>
 
-            <div class="terminal-line">
-              <span class="terminal-session">momik@portfolio:~$</span> <span class="terminal-command">cat
-                  DEV_TOOLS.txt</span>
-            </div>
+    <hr class="divider">
 
-            <div class="terminal-response">
-              Git, GitHub, GitLab, Postman, Docker, PHPStan, PHPUnit, Bruno, Markdown, Scrabble, SwaggerUI,
-              Excalidraw, Draw.io
-            </div>
-            <div class="terminal-line" style="align-items: center; display: flex">
-              <span class="terminal-session">momik@portfolio:~$</span><span class="terminal-cursor"></span>
-            </div>
+    <section id="projects" class="section-block">
+      <h2 class="section-label">01 / Projects</h2>
+
+      <div class="project-list">
+        <!-- Cursor Follower Image -->
+        <div class="cursor-follower">
+          <img src="" alt="Project preview">
+        </div>
+
+        <!-- Project 1 -->
+        <div class="project-item" data-title="IATI Publisher"
+          data-desc="Free online & Opensource tool for small to medium-sized organisations to publish development and humanitarian data in IATI Standard."
+          data-img="./assets/project-1.jpg" data-link="https://publisher.iatistandard.org/"
+          data-source="https://github.com/IATI/iatipublisher">
+          <div class="project-meta">
+            <span class="project-cat">OSS Data Tool</span>
+          </div>
+          <div class="project-link-wrapper">
+            <h3 class="project-name">IATI Publisher</h3>
+          </div>
+          <div class="project-details-preview">
+            <p>Lead Developer • Laravel, Vue.js, TypeScript, PostgreSQL</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item" data-title="Career Service Center"
+          data-desc="An Edtech platform reducing the industry-academia gap by connecting students with the right employment opportunities."
+          data-img="./assets/project-3.jpg" data-link="https://careerservicelab.com/">
+          <div class="project-meta">
+            <span class="project-cat">EdTech / SASS</span>
+          </div>
+          <div class="project-link-wrapper">
+            <h3 class="project-name">Career Service</h3>
+          </div>
+          <div class="project-details-preview">
+            <p>Backend • Laravel, PostgreSQL, RBAC, API</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item" data-title="AidStream"
+          data-desc="The most preferred tool for IATI Standard reporting across 90+ countries, 1000+ organisations publishing 4000+ datasets."
+          data-img="./assets/project-2.jpg" data-link="https://aidstream.org/">
+          <div class="project-meta">
+            <span class="project-cat">Platform / SAAS</span>
+          </div>
+          <div class="project-link-wrapper">
+            <h3 class="project-name">AidStream</h3>
+          </div>
+          <div class="project-details-preview">
+            <p>Contributor • Laravel, Vue.js, Typescript, PostgreSQL</p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-item" data-title="IPO Calendar"
+          data-desc="An editorial approach to investment tracking. Visualize offering lifecycles, access meticulous data, and capture market opportunities with confidence."
+          data-img="./assets/project-8.jpg" data-link="https://ipocalendarnepal.com.np"
+          data-source="https://github.com/PG-Momik/ipo-calendar-extension">
+
+          <div class="project-meta">
+            <span class="project-cat">Extension</span>
+          </div>
+
+          <div class="project-link-wrapper">
+            <h3 class="project-name">IPO Calendar</h3>
+          </div>
+
+          <div class="project-details-preview">
+            <p>Lead Developer • Vue.js, Laravel, SQLite</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item" data-title="Label Step"
+          data-desc="Label Step is a non-profit organisation committed to fair trade and the wellbeing of weavers and workers in the handmade carpet industry."
+          data-img="./assets/project-4.jpg" data-link="https://www.label-step.org/">
+          <div class="project-meta">
+            <span class="project-cat">Compliance Audit</span>
+          </div>
+          <div class="project-link-wrapper">
+            <h3 class="project-name">Label Step</h3>
+          </div>
+          <div class="project-details-preview">
+            <p>Full Stack • Laravel, Vue.js, TypeScript, PostgreSQL</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-item" data-title="The OnlyEver"
+          data-desc="AI powered, Duolingo but for everything. Every course is free and fully customizable with your own notes, PDFs, and videos."
+          data-img="./assets/project-5.jpg" data-link="https://www.label-step.org/">
+          <div class="project-meta">
+            <span class="project-cat">EdTech / Mobile App</span>
+          </div>
+          <div class="project-link-wrapper">
+            <h3 class="project-name">The OnlyEver</h3>
+          </div>
+          <div class="project-details-preview">
+            <p>Backend • Serverless, Node, TypeScript, MongoDB, API</p>
+          </div>
+        </div>
+
+
+        <!-- Project 6 -->
+        <div class="project-item" data-title="NGO Openbook"
+          data-desc="The transparency tool of development NGOs in Belgium." data-img="./assets/project-6.jpg"
+          data-link="https://ngo-openbook.be/">
+          <div class="project-meta">
+            <span class="project-cat">Data Vis</span>
+          </div>
+          <div class="project-link-wrapper">
+            <h3 class="project-name">NGO Openbook</h3>
+          </div>
+          <div class="project-details-preview">
+            <p>Backend • Symfony, PostgreSQL</p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-item" data-title="TofuTechnovations" data-desc="A web development agency."
+          data-img="./assets/project-7.jpg" data-link="https://tofutechnovations.com.np/">
+          <div class="project-meta">
+            <span class="project-cat">Agency</span>
+          </div>
+          <div class="project-link-wrapper">
+            <h3 class="project-name">TofuTechnovations</h3>
+          </div>
+          <div class="project-details-preview">
+            <p>Frontend • HTML, JS, CSS, SCSS</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  
-</section>
+    </section>
 
-<section id="about">
-  <div class="container">
-    <h2 class="section-title load-hidden">About me</h2>
-    <div class="row about-wrapper">
-      <div class="col-md-6 col-sm-12">
-        <div class="about-wrapper__image load-hidden">
-          <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/profile.jpg" loading="lazy">
+    <!-- SIDE PROJECTS -->
+    <section id="side-projects" class="section-block">
+      <h2 class="section-label">02 / Side Projects</h2>
+
+      <div class="side-projects-grid">
+        <a href="https://github.com/PG-Momik/gmail-local-llm" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <h3 class="sp-title">gmail-local-llm</h3>
+            <i class="fa fa-github"></i>
+          </div>
+          <p class="sp-desc">Node.js project integrating local LLM with Gmail API to classify emails (application,
+            interview, rejection) into SQLite.</p>
+          <div class="sp-tags">
+            <span>Node.js</span><span>Local LLM</span><span>SQLite</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/PG-Momik/docu-sphere-beta" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <h3 class="sp-title">Docu-sphere</h3>
+            <i class="fa fa-github"></i>
+          </div>
+          <p class="sp-desc">Offline-first desktop app built with Laravel, Inertia, Vue 3, and SQLite in Electron,
+            packaged with FrankenPHP.</p>
+          <div class="sp-tags">
+            <span>Electron</span><span>Laravel</span><span>Vue 3</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/PG-Momik/ipo-calendar-extension" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <h3 class="sp-title">IpoCalendar</h3>
+            <i class="fa fa-github"></i>
+          </div>
+          <p class="sp-desc">Chrome extension for tracking IPO events, backed by Laravel 11 + SQLite API.</p>
+          <div class="sp-tags">
+            <span>Chrome Ext</span><span>Vue.js</span><span>Laravel</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-block">
+      <h2 class="section-label">03 / Experience</h2>
+
+      <div class="timeline">
+        <!-- Job 1 -->
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">Mar 2023 – Present</span>
+            <span class="company">YoungInnovations Pvt. Ltd.</span>
+            <span class="location">Lalitpur, Nepal</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="role">Software Engineer</h3>
+            <p class="role-summary">Took on responsibilities beyond development, contributing across client
+              communication, architecture, mentorship, and interim team leadership.</p>
+            <ul class="role-details">
+              <li>Scoped features, estimated efforts, and aligned deliverables with business goals and timelines.</li>
+              <li>Mentored 3+ junior developers and onboarded new hires to internal tools and workflows.</li>
+              <li>Developed features, managed releases, delegated tasks, and ensured timely project delivery.</li>
+              <li>Acted as interim team lead, overseeing daily stand-ups, story planning, and code reviews.</li>
+              <li>Designed scalable backend systems emphasizing clean architecture and maintainability.</li>
+              <li>Wrote performant SQL using PostgreSQL CTEs for critical dashboards.</li>
+              <li>Resolved 50+ high-priority issues reported via Zendesk.</li>
+            </ul>
+            <div class="tech-stack">Vue.js, Tailwind, Laravel, PostgreSQL, TypeScript, Node.js, MongoDB, Docker</div>
+          </div>
+        </article>
+
+        <!-- Job 2 -->
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">Sept 2022 – Mar 2023</span>
+            <span class="company">YoungInnovations Pvt. Ltd.</span>
+            <span class="location">Lalitpur, Nepal</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="role">Backend Developer Trainee</h3>
+            <p class="role-summary">Contributed to multiple Laravel-based projects by completing assigned development
+              and testing tasks.</p>
+            <ul class="role-details">
+              <li>Built RESTful APIs with optimized performance and security (~400ms response time).</li>
+              <li>Automated localization processes, reducing translation effort by 50%.</li>
+              <li>Closed 30+ tickets with clean and testable code.</li>
+              <li>Developed PHPUnit tests to maintain code quality and test coverage.</li>
+            </ul>
+            <div class="tech-stack">Laravel, PostgreSQL, PHPUnit, Git, Docker, Postman</div>
+          </div>
+        </article>
+
+        <!-- Job 3 -->
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">Apr 2020 – Mar 2021</span>
+            <span class="company">TofuTechnovations Pvt. Ltd.</span>
+            <span class="location">Kathmandu, Nepal</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="role">Frontend Developer</h3>
+            <p class="role-summary">Created webpages and maintained legacy web applications.</p>
+            <ul class="role-details">
+              <li>Created interactive web prototypes and improved UX in collaboration with designers.</li>
+              <li>Translated 5+ Figma designs into responsive templates with 95% accuracy.</li>
+              <li>Integrated front-end components with RESTful APIs.</li>
+              <li>Maintained and refactored legacy jQuery codebases.</li>
+            </ul>
+            <div class="tech-stack">HTML, CSS, JS, jQuery, SCSS, Tailwind, Figma</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-block">
+      <h2 class="section-label">04 / Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <p class="skill-list">Laravel, Express.js, REST API, CKAN API, PHPUnit</p>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <p class="skill-list">Vue.js, jQuery, SCSS, Tailwind, TypeScript</p>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Database</h3>
+          <p class="skill-list">PostgreSQL, MongoDB, Redis, SQLite</p>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Tools</h3>
+          <p class="skill-list">Docker, Git, Postman, Linux, Scrabble, SwaggerUI</p>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="about-wrapper__info load-hidden">
-          <p class="about-wrapper__info-text justify-center">
-            I’m a full-stack developer with over 3 years of experience building robust applications. My work spans
-            both commercial projects and open-source initiatives, giving me a well-rounded perspective on software
-            development. While I specialize in Laravel and Vue, I'm also comfortable navigating software challenges
-            within Node.js and its ecosystem.
-          </p>
-          <p class="about-wrapper__info-text">
-            What sets me apart isn’t just my software development skills, but also my hands-on experience working with
-            international clients, engaging directly with end users, adhering to compliance standards, and even
-            leading a team.
-          </p>
-          <span class="d-flex mt-3">
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume px-6 py-4" href="/assets/resume.pdf">
-                View Resume
-              </a>
-            </span>
+    </section>
+
+    <hr class="divider">
+
+    <!-- EDUCATION -->
+    <section id="education" class="section-block">
+      <h2 class="section-label">05 / Education</h2>
+
+      <div class="education-list">
+        <div class="edu-item">
+          <div class="edu-meta">2024 - 2026</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Master’s in Computer Sciences</h3>
+            <p class="edu-school">Lincoln University, Malaysia</p>
+            <p class="edu-details">System Design, Big Data, AI, Data Analytics</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-meta">2018 - 2023</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Bachelor’s in Computer Application</h3>
+            <p class="edu-school">Tribhuvan University, Nepal</p>
+            <p class="edu-details">GPA: 3.36/4.0 • Web Tech, DBMS, DSA</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="projects">
-  <div class="container">
-    <div class="project-wrapper">
-      <h2 class="section-title dark-blue-text">Projects I've contributed to</h2>
+    <hr class="divider">
 
-      <ul id="cards">
-        <li class="card" id="card-1">
-          <div class="row card-content js-tilt thumbnail" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-            <div class="col-lg-5 col-sm-12 d-flex align-items-center">
-              <div class="project-wrapper__text load-hidden mx-4">
-                <h3 class="project-wrapper__text-title">IATI Publisher</h3>
-                <div>
-                  <p class="mb-4">
-                    IATI Publisher is a free online tool managed by the IATI Secretariat, designed for small to
-                    medium-sized organisations to publish data on development and humanitarian work. Ideal for those
-                    with fewer than 100 IATI activities each representing a project, programme, or similar unit.
-                  </p>
-                </div>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://publisher.iatistandard.org/">
-                  See Live
-                </a>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/IATI/iatipublisher/">
-                  Source Code
-                </a>
-              </div>
-            </div>
+    <!-- CONTACT -->
+    <h2 class="section-label">06 / Get In Touch</h2>
 
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div class="rounded">
-                  <img alt="IATI Publisher Home Screen" class="img-fluid w-100 h-100 object-fit-cover" src="./assets/project-1.jpg" loading="lazy">
-                </div>
-              </div>
-            </div>
+    <section id="contact" class="section-block">
+      <div class="contact-simple">
+        <p>Let's build something together.</p>
+        <a href="mailto:momik.shrestha@gmail.com" class="btn-primary">Send me an email</a>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <p>&copy; 2025 Momik Shrestha. Built with purpose.</p>
+    </footer>
+  </main>
+
+  <!-- Project Modal -->
+  <!-- Project Modal (Technical Dossier Layout) -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="modal-panel">
+
+      <!-- Panel Header -->
+      <div class="modal-header">
+        <div class="modal-id">// PROJECT_FILE</div>
+        <button class="close-modal">
+          <span class="close-text">CLOSE</span>
+          <span class="close-icon">&times;</span>
+        </button>
+      </div>
+
+      <!-- Hero Image Area -->
+      <div class="modal-hero">
+        <div class="modal-img-wrapper">
+          <img id="modalImage" src="" alt="Project Visual">
+        </div>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="modal-content-grid">
+
+        <!-- Main Title -->
+        <div class="modal-title-row">
+          <h2 id="modalTitle" class="modal-big-title">PROJECT NAME</h2>
+        </div>
+
+        <!-- Spec Sheet (The "Technical" Vibe) -->
+        <div class="spec-sheet">
+          <div class="spec-item">
+            <span class="spec-label">ROLE</span>
+            <span id="modalRole" class="spec-value">Lead Developer</span>
           </div>
-        </li>
-
-        <li class="card" id="card-2">
-          <div class="row card-content js-tilt thumbnail" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-            <div class="col-lg-5 col-sm-12 d-flex align-items-center">
-              <div class="project-wrapper__text load-hidden mx-4">
-                <h3 class="project-wrapper__text-title">AidStream</h3>
-                <div>
-                  <p class="mb-4">
-                    Across 90+ countries, 1000+ organisations - publishing 4000+ datasets AidStream is the most
-                    preferred
-                    tool to report and publish your aid data in IATI Standard. A complete tool for publishing aid data
-                    in
-                    IATI standard.
-                  </p>
-                </div>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://aidstream.org/">
-                  See Live
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div class="rounded">
-                  <img alt="Aidstream Home Screen" class="img-fluid w-100 h-100 object-fit-cover" src="./assets/project-2.jpg" loading="lazy">
-                </div>
-              </div>
-            </div>
+          <div class="spec-item">
+            <span class="spec-label">TECH STACK</span>
+            <span id="modalTech" class="spec-value">Laravel, Vue.js</span>
           </div>
-        </li>
-
-        <li class="card" id="card-3">
-          <div class="row card-content js-tilt thumbnail" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-            <div class="col-lg-5 col-sm-12 d-flex align-items-center">
-              <div class="project-wrapper__text load-hidden mx-4">
-                <h3 class="project-wrapper__text-title">Career Service Center</h3>
-                <div>
-                  <p class="mb-4">
-                    Career Service Center (CSC) works to reduce the industry-academia gap witnessed in the work
-                    industry.
-                    CSC focuses on enhancing your professional skills as well as soft skills valued in the workforce.
-                    We
-                    aim to help students find the right place of employment for them while helping organisations find
-                    the
-                    right fit for their teams.
-                  </p>
-                </div>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://careerservicelab.com/">
-                  See Live
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div class="rounded">
-                  <img alt="CSC Home Screen" class="img-fluid w-100 h-100 object-fit-cover" src="./assets/project-3.jpg" loading="lazy">
-                </div>
-              </div>
-            </div>
+          <div class="spec-item">
+            <span class="spec-label">TYPE</span>
+            <span id="modalCat" class="spec-value">Web Platform</span>
           </div>
-        </li>
+        </div>
 
-        <li class="card" id="card-4">
-          <div class="row card-content js-tilt thumbnail" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-            <div class="col-lg-5 col-sm-12 d-flex align-items-center">
-              <div class="project-wrapper__text load-hidden mx-4">
-                <h3 class="project-wrapper__text-title">Label STEP</h3>
-                <div>
-                  <p class="mb-4">
-                    The Label for Fair Trade in Handmade Carpets. Label STEP is the non-profit organisation committed
-                    to
-                    fair trade and the wellbeing of weavers and workers in the handmade carpet industry.
-                  </p>
-                </div>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://label-step.org/">
-                  See Live
-                </a>
-              </div>
-            </div>
+        <!-- Description -->
+        <div class="modal-body">
+          <span class="body-label">OVERVIEW</span>
+          <p id="modalDesc" class="modal-description-text"></p>
+        </div>
 
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div class="rounded">
-                  <img alt="LabelStep Home Screen" class="img-fluid w-100 h-100 object-fit-cover" src="./assets/project-4.jpg" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
+        <!-- Action Footer -->
+        <div class="modal-actions">
+          <a id="modalLink" href="#" target="_blank" class="action-btn primary">
+            <span>VISIT SITE</span>
+            <i class="fa fa-external-link"></i>
+          </a>
+          <a id="modalSource" href="#" target="_blank" class="action-btn secondary">
+            <span>SOURCE CODE</span>
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
 
-        <li class="card" id="card-5">
-          <div class="row card-content js-tilt thumbnail" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-            <div class="col-lg-5 col-sm-12 d-flex align-items-center">
-              <div class="project-wrapper__text load-hidden mx-4">
-                <h3 class="project-wrapper__text-title">The Only Ever</h3>
-                <div>
-                  <p class="mb-4">
-                    Only Ever makes learning easy, fast, and fun—like Duolingo, but for everything. Explore
-                    expert-crafted
-                    learning paths or create your own with personal documents and videos. Test yourself with
-                    AI-generated
-                    quizzes, and reinforce knowledge with spaced recall—all in one app.
-                  </p>
-                </div>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://www.theonlyever.com/">
-                  See Live
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div class="rounded">
-                  <img alt="The Only Ever Web Home Screen" class="img-fluid w-100 h-100 object-fit-cover" src="./assets/project-5.jpg" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li class="card" id="card-6">
-          <div class="row card-content js-tilt thumbnail" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-            <div class="col-lg-5 col-sm-12 d-flex align-items-center">
-              <div class="project-wrapper__text load-hidden mx-4">
-                <h3 class="project-wrapper__text-title">NGO Openbook</h3>
-                <div>
-                  <p class="mb-4">
-                    The transparency tool of development NGOs in Belgium. NGO-Openbook is the transparency tool of the
-                    Belgian NGOs active in development cooperation and humanitarian aid. The general term "NGO" used
-                    in this site also includes other civil society organizations such as syndical organizations.
-                  </p>
-                </div>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://ngo-openbook.be">
-                  See Live
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div class="rounded">
-                  <img alt="NGO Openbook Home Screen" class="img-fluid w-100 h-100 object-fit-cover" src="./assets/project-6.jpg" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li class="card" id="card-7">
-          <div class="row card-content js-tilt thumbnail" data-tilt="" data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
-            <div class="col-lg-5 col-sm-12 d-flex align-items-center">
-              <div class="project-wrapper__text load-hidden mx-4">
-                <h3 class="project-wrapper__text-title">Tofu Technovation</h3>
-                <div>
-                  <p class="mb-4">
-                    Tofu Technovation is a small web development agency that specializes in building custom websites,
-                    e-commerce and mobile application for small mom and pop businesses.
-                  </p>
-                </div>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://tofu.com.np/">
-                  See Live
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div class="rounded">
-                  <img alt="Tofu Technovation Home Screen" class="img-fluid w-100 h-100 object-fit-cover" src="./assets/project-7.jpg" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="contact-wrapper load-hidden d-flex justify-content-center">
-      <div class="glass-card p-4 p-md-5 shadow-lg animated-fade-in">
-        <h2 class="section-title mb-5">Leave a message</h2>
-
-        <form id="contactForm" action="https://formspree.io/f/mdkergln" method="POST" class="needs-validation" novalidate="">
-          <div class="row mb-3">
-            <div class="col-md-6 mb-3 mb-md-0">
-              <div class="form-floating">
-                <input type="text" class="form-control glowing-input" id="name" name="name" placeholder="Your Name" required="">
-                <label for="name">Your Name</label>
-                <div class="invalid-feedback">Please enter your name.</div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="email" class="form-control glowing-input" id="email" name="email" placeholder="Your Email" required="">
-                <label for="email">Your Email</label>
-                <div class="invalid-feedback">Please enter a valid email.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <div class="form-floating">
-                <textarea class="form-control glowing-input" placeholder="Leave your message here" id="message" name="message" style="height: 150px" required=""></textarea>
-              <label for="message">Your Message</label>
-              <div class="invalid-feedback">Please enter your message.</div>
-            </div>
-          </div>
-
-          <div class="text-center">
-            <button type="submit" class="cta-btn cta-btn--hero mt-3">Send
-              <i class="fa fa-envelope"></i>
-            </button>
-            <p id="formStatus" class="mt-3 text-light small"></p>
-          </div>
-        </form>
       </div>
     </div>
-
   </div>
-</section>
 
-
-<footer class="footer navbar-static-bottom">
-  <div class="container">
-    <a rel="noreferrer" href="#hero" class="back-to-top">
-      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-    </a>
-    <div class="f-md">IF EMAIL DOESN'T SUIT YOU, FIND ME ON:</div>
-    <div class="social-links">
-      <a rel="noreferrer" href="https://www.instagram.com/fairly_local.0_0/" target="_blank">
-        <i class="fa fa-instagram fa-inverse"></i>
-      </a>
-      <a rel="noreferrer" href="https://www.linkedin.com/in/momik/" target="_blank">
-        <i class="fa fa-linkedin fa-inverse"></i>
-      </a>
-      <a rel="noreferrer" href="https://www.github.com/PG-Momik" target="_blank">
-        <i class="fa fa-github fa-inverse"></i>
-      </a>
-    </div>
-  </div>
-</footer>
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+  </a>
 </body>
 
 </html>
-
-<style>
-</style>
