@@ -33,9 +33,16 @@
     }
     animate();
 
-    // Show/hide and update image on project hover
-    projectItems.forEach(item => {
-        item.addEventListener('mouseenter', () => {
+    let hoverTimeout;
+
+    const projectNames = document.querySelectorAll('.project-name');
+
+    // Show/hide and update image on project name hover
+    projectNames.forEach(name => {
+        name.addEventListener('mouseenter', () => {
+            const item = name.closest('.project-item');
+            if (!item) return;
+
             const imgSrc = item.dataset.img;
 
             if (imgSrc && imgSrc !== currentImage) {
@@ -46,17 +53,12 @@
             cursorFollower.classList.add('active');
         });
 
-        item.addEventListener('mouseleave', () => {
-            // Small delay before hiding to prevent flicker between items
-            setTimeout(() => {
-                if (!projectList.matches(':hover')) {
-                    cursorFollower.classList.remove('active');
-                }
-            }, 50);
+        name.addEventListener('mouseleave', () => {
+            cursorFollower.classList.remove('active');
         });
     });
 
-    // Hide when leaving project list entirely
+    // Hide when leaving project list entirely key safety
     projectList.addEventListener('mouseleave', () => {
         cursorFollower.classList.remove('active');
         currentImage = '';

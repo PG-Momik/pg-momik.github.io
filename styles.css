@@ -19,7 +19,7 @@
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
-  --spacing-xl: 8rem;
+  --spacing-xl: 5rem;
 
   --container-width: 1200px;
   --transition-fast: 0.2s ease;
@@ -132,7 +132,7 @@ ul {
 
 .header-meta {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr;
   gap: var(--spacing-md);
   font-family: var(--font-mono);
   font-size: 0.9rem;
@@ -359,6 +359,7 @@ ul {
   margin: 0;
   /* line-height: 1; */
   transition: color 0.3s ease;
+  display: inline;
 }
 
 .project-item:hover .project-name {
@@ -891,7 +892,8 @@ ul {
 
   .timeline-item,
   .project-item,
-  .edu-item {
+  .edu-item,
+  .header-meta {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
