@@ -1,0 +1,11 @@
+# Not published (Cloudflare static assets)
+.git
+.github
+.idea
+.DS_Store
+.gitignore
+.assetsignore
+wrangler.jsonc
+node_modules
+CNAME
+*.md

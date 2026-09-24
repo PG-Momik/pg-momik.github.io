@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.86.0/config-schema.json",
+  // Static site on Cloudflare Workers (assets only, no script). Deploy: npx wrangler@4.86.0 deploy
+  "name": "momik-portfolio",
+  "compatibility_date": "2026-05-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": { "directory": "." },
+  "routes": [
+    { "pattern": "momik.dev", "custom_domain": true },
+    { "pattern": "www.momik.dev", "custom_domain": true }
+  ]
+}
