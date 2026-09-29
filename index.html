@@ -74,9 +74,150 @@
 
     <hr class="divider">
 
+    <!-- PERSONAL PROJECTS -->
+    <section id="personal-projects" class="section-block">
+      <h2 class="section-label">01 / Things I've Built</h2>
+
+      <div class="side-projects-grid">
+        <!-- FEATURE: no-nepali-profanity (five published ports) -->
+        <article class="sp-feature">
+          <div>
+            <div class="sp-eyebrow">
+              <span>Open source</span>
+              <span class="dot"></span>
+              <span>5 language ports</span>
+            </div>
+            <h3 class="sp-feature-title">no-nepali-profanity</h3>
+            <p class="sp-feature-desc">A profanity filter for English, Romanized Nepali and Devanagari. Catches
+              leetspeak, stretched and spelled-out letters and Nepali postpositions, while taking care not to block
+              real names. One lexicon, one matching engine, ported to five ecosystems.</p>
+            <div class="sp-feature-links">
+              <a href="https://mukhxadnahunna.com" target="_blank">mukhxadnahunna.com <i
+                  class="fa fa-external-link"></i></a>
+              <a href="https://github.com/PG-Momik/no-nepali-profanity" target="_blank">Source <i
+                  class="fa fa-github"></i></a>
+            </div>
+          </div>
+
+          <ul class="sp-ports">
+            <li><a class="sp-port" href="https://mukhxadnahunna.com/js/" target="_blank">
+                <span class="sp-port-lang">JavaScript</span><span class="sp-port-reg">npm</span></a></li>
+            <li><a class="sp-port" href="https://mukhxadnahunna.com/python/" target="_blank">
+                <span class="sp-port-lang">Python</span><span class="sp-port-reg">PyPI</span></a></li>
+            <li><a class="sp-port" href="https://mukhxadnahunna.com/go/" target="_blank">
+                <span class="sp-port-lang">Go</span><span class="sp-port-reg">Go modules</span></a></li>
+            <li><a class="sp-port" href="https://mukhxadnahunna.com/php/" target="_blank">
+                <span class="sp-port-lang">PHP</span><span class="sp-port-reg">Packagist</span></a></li>
+            <li><a class="sp-port" href="https://mukhxadnahunna.com/flutter/" target="_blank">
+                <span class="sp-port-lang">Flutter &amp; Dart</span><span class="sp-port-reg">pub.dev</span></a></li>
+          </ul>
+        </article>
+
+        <!-- dither-art -->
+        <a href="https://dither-art.momik.dev" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <span class="sp-kind">npm package</span>
+            <i class="fa fa-external-link"></i>
+          </div>
+          <h3 class="sp-title">dither-art</h3>
+          <p class="sp-desc">Seeded 1-bit artwork drawn from any string &mdash; ridges, seas, dunes, planets. The same
+            seed always gives the same picture, so anything can have cover art without storing an image. Zero
+            dependencies, ~6 KB.</p>
+          <div class="sp-tags">
+            <span>TypeScript</span><span>SVG</span><span>Generative</span><span>Zero-dep</span>
+          </div>
+        </a>
+
+        <!-- Laravel Google Sheet i18n -->
+        <a href="https://sheet-i18n.momik.dev" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <span class="sp-kind">Composer package</span>
+            <i class="fa fa-external-link"></i>
+          </div>
+          <h3 class="sp-title">laravel-google-sheet-i18n</h3>
+          <p class="sp-desc">Manage Laravel translations in Google Sheets. Push local keys up, draft them with
+            <code>=GOOGLETRANSLATE()</code>, then pull the language files back into the app.</p>
+          <div class="sp-tags">
+            <span>Laravel</span><span>PHP</span><span>Sheets API</span>
+          </div>
+        </a>
+
+        <!-- IPO Calendar -->
+        <a href="https://ipocalendarnepal.com" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <span class="sp-kind">Product</span>
+            <i class="fa fa-external-link"></i>
+          </div>
+          <h3 class="sp-title">IPO Calendar</h3>
+          <p class="sp-desc">Tracks new NEPSE IPO openings and closings and puts the ones you follow on your Google
+            Calendar. A Chrome extension on an edge API that refreshes NEPSE data every three hours.</p>
+          <div class="sp-tags">
+            <span>Cloudflare Workers</span><span>D1</span><span>Vue.js</span><span>Chrome Extension</span>
+          </div>
+        </a>
+
+        <!-- Genesis Engine -->
+        <a href="https://genesis.momik.dev" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <span class="sp-kind">Design tool</span>
+            <i class="fa fa-external-link"></i>
+          </div>
+          <h3 class="sp-title">Genesis Engine</h3>
+          <p class="sp-desc">A procedurally generated design system generator: mutate a seed, preview the result across
+            real UI, then export the whole system as CSS or Tailwind tokens.</p>
+          <div class="sp-tags">
+            <span>Design System</span><span>Vanilla JS</span>
+          </div>
+        </a>
+
+        <!-- Docu-Share Mono -->
+        <a href="https://github.com/PG-Momik/docu-share-mono" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <span class="sp-kind">Experiment</span>
+            <i class="fa fa-github"></i>
+          </div>
+          <h3 class="sp-title">Docu-Share Mono</h3>
+          <p class="sp-desc">A real-time collaborative Notion-like editor built with Go, React, Postgres and YJS.</p>
+          <div class="sp-tags">
+            <span>Go</span><span>React</span><span>PostgreSQL</span><span>YJS</span>
+          </div>
+        </a>
+
+        <!-- Docu-Share Beta -->
+        <a href="https://github.com/PG-Momik/docu-sphere-beta" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <span class="sp-kind">Experiment</span>
+            <i class="fa fa-github"></i>
+          </div>
+          <h3 class="sp-title">Docu-Share Beta</h3>
+          <p class="sp-desc">An offline-first Obsidian-like editor built with Laravel, Inertia and Vue, packaged with
+            Electron, SQLite and a FrankenPHP binary so it runs with nothing installed.</p>
+          <div class="sp-tags">
+            <span>Electron</span><span>FrankenPHP</span><span>Inertia</span><span>Vue</span>
+          </div>
+        </a>
+
+        <!-- gmail-local-llm -->
+        <a href="https://github.com/PG-Momik/gmail-local-llm" target="_blank" class="side-project-card">
+          <div class="sp-header">
+            <span class="sp-kind">Experiment</span>
+            <i class="fa fa-github"></i>
+          </div>
+          <h3 class="sp-title">gmail-local-llm</h3>
+          <p class="sp-desc">Runs a local LLM over the Gmail API to sort job mail into application, interview and
+            rejection, and writes the results to SQLite.</p>
+          <div class="sp-tags">
+            <span>Node.js</span><span>Local LLM</span><span>SQLite</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <hr class="divider">
+
     <!-- EXPERIENCE -->
     <section id="experience" class="section-block">
-      <h2 class="section-label">01 / Experience</h2>
+      <h2 class="section-label">02 / Experience</h2>
 
       <div class="timeline">
         <!-- Job 1 -->
@@ -191,88 +332,6 @@
     </section>
 
     <hr class="divider">
-
-    <!-- PERSONAL PROJECTS -->
-    <section id="personal-projects" class="section-block">
-      <h2 class="section-label">02 / Personal Projects</h2>
-
-      <div class="side-projects-grid">
-        <!-- 1. IPO Calendar -->
-        <a href="https://ipocalendarnepal.com" target="_blank" class="side-project-card">
-          <div class="sp-header">
-            <h3 class="sp-title">IPO Calendar</h3>
-            <i class="fa fa-external-link"></i>
-          </div>
-          <p class="sp-desc">A chrome extension that allows you to track new NEPSE IPOs and manage your portfolio.</p>
-          <div class="sp-tags">
-            <span>Vue.js</span><span>Laravel</span><span>Chrome Extension</span>
-          </div>
-        </a>
-
-        <!-- 2. Genesis Engine -->
-        <a href="https://genesis.momik.dev" target="_blank" class="side-project-card">
-          <div class="sp-header">
-            <h3 class="sp-title">Genesis Engine</h3>
-            <i class="fa fa-external-link"></i>
-          </div>
-          <p class="sp-desc">An procedurally generated design system generator that allows users to create, customize,
-            and export professional UI design systems with interactive previews.</p>
-          <div class="sp-tags">
-            <span>Design System</span>
-          </div>
-        </a>
-
-        <!-- 3. Docu-Share Mono -->
-        <a href="https://github.com/PG-Momik/docu-share-mono" target="_blank" class="side-project-card">
-          <div class="sp-header">
-            <h3 class="sp-title">Docu-Share Mono</h3>
-            <i class="fa fa-github"></i>
-          </div>
-          <p class="sp-desc">A real-time collaborative Notion like editor built using Go, React, Postgres, YJS.</p>
-          <div class="sp-tags">
-            <span>Go</span><span>React</span><span>PostgreSQL</span><span>YJS</span>
-          </div>
-        </a>
-
-        <!-- 4. Docu-Share Beta -->
-        <a href="https://github.com/PG-Momik/docu-sphere-beta" target="_blank" class="side-project-card">
-          <div class="sp-header">
-            <h3 class="sp-title">Docu-Share Beta</h3>
-            <i class="fa fa-github"></i>
-          </div>
-          <p class="sp-desc">An offline-first Obsidian-like editor built with Laravel, Inertia and Vue packaged with
-            Electron, SQLite and FrankenPHP binary for offline usability.</p>
-          <div class="sp-tags">
-            <span>Electron</span><span>FrankenPHP</span><span>Inertia</span><span>Vue</span>
-          </div>
-        </a>
-
-        <!-- 5. Cart System -->
-        <a href="https://cart.momik.dev" target="_blank" class="side-project-card">
-          <div class="sp-header">
-            <h3 class="sp-title">Cart System</h3>
-            <i class="fa fa-external-link"></i>
-          </div>
-          <p class="sp-desc">A Laravel cart system built as an assessment for Laravel Developer role.</p>
-          <div class="sp-tags">
-            <span>Laravel</span><span>Vue</span><span>Inertia</span>
-          </div>
-        </a>
-
-        <!-- 6. gmail-local-llm -->
-        <a href="https://github.com/PG-Momik/gmail-local-llm" target="_blank" class="side-project-card">
-          <div class="sp-header">
-            <h3 class="sp-title">gmail-local-llm</h3>
-            <i class="fa fa-github"></i>
-          </div>
-          <p class="sp-desc">Node.js project integrating local LLM with Gmail API to classify emails (application,
-            interview, rejection) into SQLite.</p>
-          <div class="sp-tags">
-            <span>Node.js</span><span>Local LLM</span><span>SQLite</span>
-          </div>
-        </a>
-      </div>
-    </section>
 
     <!-- COMPANY PROJECTS -->
     <section id="projects" class="section-block">
